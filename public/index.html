@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GIS Symposium</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/main.js"></script>
+	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+
+	<script>
+		const ipcRenderer = require('electron').ipcRenderer;
+		// wait for an updateReady message
+		ipcRenderer.on('updateReady', function(event, text) {
+				// changes the text of the button
+				var container = document.getElementById('ready');
+				container.innerHTML = "new version ready!";
+		})
+</script>
+Version: <span id="version">v1.2.0</span>
+<!-- the button onClick sends a quitAndInstall message to the electron main process -->
+<button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
+
+</head>
+
+<body class="bgIndex">
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html"><button class="btn btn-default btn-lg active">HOME</button></a></li>
+			<li><a href="intro.html"><button class="btn btn-default btn-lg">INTRO</button></a></li>
+			<li><a href="urnik.html"><button class="btn btn-default btn-lg">SCHEDULE</button></a></li>
+			<li><a onclick="pdf()"><button class="btn btn-default btn-lg small">BOOK OF ABSTRACTS</button></a></li>
+			<li><a href="contact.html"><button class="btn btn-default btn-lg">CONTACT</button></a></li>
+			<li><a href="https://www.plantslo.org/home.php"><button class="btn btn-default btn-lg">WWW</button></a></li>
+		</ul>
+	</div>
+
+	<div class="vcenter">
+		<div class="indexBox text-center">
+			<div class="jumbotron">
+				<img src="img/logoEN1.png" class="img-responsive">
+				<h2>7th symposium on plant biology</h2>
+				<h3 class="date">17-18 September 2018<br>
+				Ljubljana, Slovenia</h3>
+			</div>
+		</div>	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,125 @@
+body,html {
+    height: 100%;
+}
+.jumbotron {
+    background-color: rgba(255,255,255,.6);
+}
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+}
+#navigation ul {
+    margin-top: 50px;
+}
+#navigation li {
+    list-style: none;
+}
+#navigation .active {
+    background-color: #6cb741;
+    color: #fff;
+}
+#navigation button {
+    margin: 10px 10px 10px -30px;
+    background-color: rgba(255,255,255,.7);
+    border-radius: 0px;
+    width: 200px;
+    transition: .4s ease-out;
+}
+#navigation button:hover {
+    background-color: #6cb741;
+    color: #fff;
+    border: none;
+}
+.small {
+    font-size: 14px;
+}
+/* Index page */
+.bgIndex {
+    background-image: url(../img/mystery-morning.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.vcenter {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+.indexBox .jumbotron {
+    padding: 30px;
+}
+.indexBox h2 {
+    text-transform: uppercase;
+}
+.indexBox .date {
+    font-style: italic; 
+}
+
+/* Intro Page */
+.introBox .jumbotron {
+    padding: 30px;
+}
+.introBox img {
+    margin-bottom: 30px;
+}
+
+/* Urnik Page */
+.bgUrnik {
+    background-image: url(../img/slikaBckg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#scheduleDate {
+    margin: 30px 0;
+}
+#scheduleDate li {
+    display: inline-block;
+}
+#scheduleDate .active {
+    background-color: #6cb741;
+    color: #fff;
+}
+#scheduleDate button {
+    border-radius: 0px;
+    margin-right: 10px;
+    transition: all .4s;
+    padding: 10px;
+}
+#scheduleDate button:hover {
+    background-color: #6cb741;
+    color: #fff;
+    border: none;
+}
+.table {
+    background-color: rgba(255,255,255,.5);
+}
+.table .time {
+    min-width: 110px;
+}
+.table .headline {
+    color: #6cb741;
+    font-size: 20px;
+}
+.one {
+    background-color: #f1dcdb;
+}
+.two {
+    background-color: #ecf0df;
+}
+.three {
+    background-color: #e1e1df;
+}
+/*-- Contact Page --*/
+.contact {
+    background-color: rgba(255,255,255,.6);
+    padding: 30px;
+}

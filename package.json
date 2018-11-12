@@ -1,0 +1,34 @@
+{
+	"name": "gis",
+	"version": "1.2.0",
+	"description": "GIS",
+	"author": "MEDIACARD3",
+	"license": "ISC",
+	"main": "index.js",
+	"repository": "https://github.com/iCime85/Hallo-World.git",
+	"scripts": {
+		"dist": "build",
+		"ship": "build -p always"
+	},
+	"build": {
+		"appId": "com.gis.app",
+		"productName": "GIS",
+		"win": {
+			"target": "portable",
+			"icon": "build/icon.ico",
+			"compression": "store",
+			"asar": "true"
+		},
+		"mac": {
+			"target": "dmg",
+			"compression": "store",
+			"asar": "true"
+		}
+	},
+	"devDependencies": {
+		"electron": "1.8.2"
+	},
+	"dependencies": {
+		"electron-updater": "^3.2.3"
+	}
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GIS Symposium</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css">
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/main.js"></script>
+	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+</head>
+
+<body class="bgUrnik">
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html"><button class="btn btn-default btn-lg">HOME</button></a></li>
+			<li><a href="intro.html"><button class="btn btn-default btn-lg">INTRO</button></a></li>
+			<li><a href="urnik.html"><button class="btn btn-default btn-lg active">SCHEDULE</button></a></li>
+			<li><a onclick="pdf()"><button class="btn btn-default btn-lg small">BOOK OF ABSTRACTS</button></a></li>
+			<li><a href="contact.html"><button class="btn btn-default btn-lg">CONTACT</button></a></li>
+			<li><a href="https://www.plantslo.org/home.php"><button class="btn btn-default btn-lg">WWW</button></a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-3 col-md-9">
+				<h2 class="text-center">Symposium Programme</h2>
+				<div id="scheduleDate">
+					<ul class="text-center">
+						<li><a href="urnik.html"><button class="btn btn-default active">Monday, September 17th 2018</button></a></li>
+						<li><a href="urnik2.html"><button class="btn btn-default">Tuesday, September 18th 2018</button></a></li>
+					</ul>
+				</div>
+				<table class="table">
+					<thead>
+					<tr>
+						<th class="time">Time</th>
+						<th>Event</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr class="active">
+							<td>08:30 - 09:00</td>
+							<td>Registration</td>
+						</tr>
+						<tr class="active headline">
+							<td class="text-center"></td>
+							<td>Opening session (chair: Marina Dermastia)</td>
+						</tr>   
+						<tr class="active">
+							<td>09:00</td>
+							<td>Welcome address</td>
+						</tr>
+						<tr class="active">
+							<td>09:15</td>
+							<td>Opening lecture: Johan Burger: Genome editing – a promising technology for Plant Pathology (IL1)</td>
+						</tr>
+
+						<tr class="warning headline">
+							<td class="text-center">Session 1</td>
+							<td>Modern technologies (chair: Marina Dermastia)</td>
+						</tr>
+							
+						<tr class="warning">
+							<td>09:50</td>
+							<td>Uroš Žibrat: Remote sensing applications for plant health and crop management (IL2)</td>
+						</tr>
+						<tr class="warning">
+							<td>10:20</td>
+							<td>Klemen Eler: Remote sensing of drought stressed maize in NE Slovenia (SL1)</td>
+						</tr>
+						
+						<tr class="active">
+							<td>10:35 - 11:05</td>
+							<td>Coffee break & posters</td>
+						</tr>
+
+						<tr class="danger headline">
+							<td class="text-center">Session 2</td>
+							<td>Modern technologies & Plant phylogeny (chair: Johan Burger)</td>
+						</tr>
+						<tr class="danger">
+							<td>11:05</td>
+							<td>Marko Petek: Testing RNAi pesticide targets in Colorado potato beetle (SL2)</td>
+						</tr>
+						<tr class="danger">
+							<td>11:20</td>
+							<td>Jana Ambrožič-Dolinšek: Cryopreservation, an important tool for long-term preservation of endangered species (SL3)</td>
+						</tr>
+						<tr class="danger">
+							<td>11:35</td>
+							<td>Claudio Varotto: A transcriptomics view on the evolution of Arundo donax, a species with high potential for phytoremediation and bioenergy production (IL3)</td>
+						</tr>
+						<tr class="danger">
+							<td>12:05</td>
+							<td>Božo Frajman: Using an integrative approach to understand diversification of the Heliosperma pusillum group (Caryophyllaceae) (IL4)</td>
+						</tr>
+						<tr class="danger">
+							<td>12:35</td>
+							<td>Ales Lebeda: Research and exploitation of diversity of wild Lactuca germplasm in North America (SL4)</td>
+						</tr>
+
+						<tr class="active">
+							<td>12:50 - 14:20</td>
+							<td>Lunch & posters</td>
+						</tr>
+
+						<tr class="info headline">
+							<td class="text-center">Session 3</td>
+							<td>Plant structure and function (chair: Andrea Schubert)</td>
+						</tr>
+						<tr class="info">
+							<td>14:20</td>
+							<td>Primož Pelicon: Elemental and molecular imaging in plant biology (IL5)</td>
+						</tr>
+						<tr class="info">
+							<td>14:50</td>
+							<td>Aleš Kladnik: Abscission in tomato leaves and flowers (SL5)</td>
+						</tr>
+						<tr class="info">
+							<td>15:05</td>
+							<td>Pol Tijskens: Stability of variation: the case of tomato size in trusses. (SL6)</td>
+						</tr>
+						<tr class="info">
+							<td>15:20</td>
+							<td>Joerg Fettke: Manipulation of the transitory starch granule number and morphology in Arabidopsis thaliana (SL7)</td>
+						</tr>
+						
+						<tr class="active">
+							<td>15:35 – 16:05</td>
+							<td>Coffee break & posters</td>
+						</tr>
+
+						<tr class="success headline">
+							<td class="text-center">Session 4</td>
+							<td>Plant structure and function (chair: Andrea Nardini)</td>
+						</tr>
+						<tr class="success">
+							<td>16:05</td>
+							<td>Jožica Gričar: Plasticity of radial growth of trees from different environments (IL6)</td>
+						</tr>
+						<tr class="success">
+							<td>16:35</td>
+							<td>Katarina Šoln: Ultrastructural changes in radish root tip after the exposure to rhizome extracts of Fallopia japonica and F. × bohemica (SL8)</td>
+						</tr>
+						<tr class="success">
+							<td>16:50</td>
+							<td>KDominik Vodnik: Anatomical and physiological traits of Quercus pubescens Willd. from nearby sub-Mediterranean stands differing in soil and microclimate (SL9)</td>
+						</tr>
+
+						<tr class="active">
+							<td>17:05 – 18:30</td>
+							<td>Posters session</td>
+						</tr>
+						<tr class="active">
+							<td>18:30</td>
+							<td>Symposium dinner (greenhouse at the venue)</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

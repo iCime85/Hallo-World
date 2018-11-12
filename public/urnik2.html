@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GIS Symposium</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/all.css">
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/main.js"></script>
+	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+</head>
+
+<body class="bgUrnik">
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html"><button class="btn btn-default btn-lg">HOME</button></a></li>
+			<li><a href="intro.html"><button class="btn btn-default btn-lg">INTRO</button></a></li>
+			<li><a href="urnik.html"><button class="btn btn-default btn-lg active">SCHEDULE</button></a></li>
+			<li><a onclick="pdf()"><button class="btn btn-default btn-lg small">BOOK OF ABSTRACTS</button></a></li>
+			<li><a href="contact.html"><button class="btn btn-default btn-lg">CONTACT</button></a></li>
+			<li><a href="https://www.plantslo.org/home.php"><button class="btn btn-default btn-lg">WWW</button></a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-3 col-md-9">
+				<h2 class="text-center">Symposium Programme</h2>
+				<div id="scheduleDate">
+					<ul class="text-center">
+						<li><a href="urnik.html"><button class="btn btn-default">Monday, September 17th 2018</button></a></li>
+						<li><a href="urnik2.html"><button class="btn btn-default active">Tuesday, September 18th 2018</button></a></li>
+					</ul>
+				</div>
+				<table class="table">
+					<thead>
+					<tr>
+						<th class="time">Time</th>
+						<th>Event</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr class="one headline">
+							<td class="text-center">Session 5</td>
+							<td>Plants interactions with environment (chair: Jasna Dolenc Koce)</td>
+						</tr>
+						<tr class="one">
+							<td>09:00</td>
+							<td>Maruša Pompe Novak: The influence of circadian rhythm on the potato response to PVY infection (IL9)</td>
+                        </tr>
+                        <tr class="one">
+							<td>09:30</td>
+							<td>Tjaša Lukan: Spatiotemporal analysis of potato hypersensitive response-conferred resistance to potato virus Y: RBOHD is required for successful virus arrest (SL13)</td>
+                        </tr>
+                        <tr class="one">
+							<td>09:45</td>
+							<td>Tjaša Stare: Unrevealing complex mechanisms of plant defense signalling using systems biology approach identifies StSAPK8 as novel regulator of potato immunity (SL14)</td>
+                        </tr>
+                        <tr class="one">
+							<td>10:00</td>
+							<td>Anna Coll: The ethylene response factor StERF49 is a negative regulator of potato defence response against PVY (SL15)</td>
+                        </tr>
+                        <tr class="one">
+							<td>10:15</td>
+							<td>Špela Tomaž: Potato immune signalization and potato virus Y proteins – towards analysis of 3D protein structures (SL16)</td>
+                        </tr>
+                        
+                        <tr class="active">
+							<td>10:30 - 11:00 </td>
+							<td>Coffee break & posters</td>
+                        </tr>
+
+                        <tr class="two headline">
+							<td class="text-center">Session 6</td>
+							<td>Plants interactions with other organisms (chair: Dan Jacobson)</td>
+						</tr>
+                        <tr class="two">
+							<td>11:00</td>
+							<td>Andrea Schubert: Do ABA and miR156 mediate the effects of strigolactones on drought stress tolerance and reproductive development? (IL7)</td>
+                        </tr>
+                        <tr class="two">
+							<td>11:30</td>
+							<td>Andrea Nardini: Drought stress and xylem embolism: resistance and resilience of forest trees to climate change (IL8)</td>
+                        </tr>
+                        <tr class="two">
+							<td>12:00</td>
+							<td>Angela Balzano: Effect of environmental factors on tree rings of Mediterranean species: investigation of xylogenesis and formation of irregularities in the wood (SL10)</td>
+                        </tr>
+                        <tr class="two">
+							<td>12:15</td>
+							<td>Antonella Polzella: Effects of LED spectra in combination with biochar amendment on Pisum sativum L. and Arabidopsis thaliana L. growth (SL11)</td>
+                        </tr>
+                        <tr class="two">
+							<td>12:30</td>
+							<td>Anja Kavčič: Selenate and selenite impact on mercury uptake and toxicity in plants (SL12)</td>
+                        </tr>
+
+                        <tr class="active">
+							<td>12:45 - 14:15</td>
+							<td>Lunch & posters</td>
+                        </tr>
+
+                        <tr class="three headline">
+							<td class="text-center">Session 7</td>
+							<td>Plants interactions with other organisms (chair: Claudio Varotto)</td>
+						</tr>
+                        <tr class="three">
+							<td>14:15</td>
+							<td>Jasna Dolenc Koce: Biological activity of selected invasive alien plants (IL10)</td>
+                        </tr>
+                        <tr class="three">
+							<td>14:45</td>
+							<td>Goran Kovačević: Interactions in green hydra symbiosis (IL11)</td>
+                        </tr>
+                        <tr class="three">
+							<td>15:15</td>
+							<td>Jaka Razinger: Manipulating plant-microbe-insect interactions to enhance crop production and resistance to soil pests (SL17)</td>
+                        </tr>
+                        <tr class="three">
+							<td>15:30</td>
+							<td>Karina Eva Hauer: Colletotrichum coccodes – how does the fungus operate in the shadows? (SL18)</td>
+                        </tr>
+                        <tr class="three">
+							<td>15:45</td>
+							<td>Helena Volk: Verticillium nonalfalfae secretes a chitin binding protein to conceal itself from plant chitinases (SL19)</td>
+                        </tr>
+
+                        <tr class="active">
+							<td>10:30 - 11:00 </td>
+							<td>Coffee break</td>
+                        </tr>
+
+                        <tr class="active headline">
+							<td class="text-center"></td>
+							<td>Closing session (chair: Špela Baebler)</td>
+                        </tr> 
+                        <tr class="active">
+							<td>16:30</td>
+							<td>Closing lecture: Dan Jacobson: Large Scale Systems Biology Approaches to Integrated Discovery: Explainable-AI and Supercomputing as the New Microscope for Complex Systems (IL12)</td>
+                        </tr>
+                        <tr class="active">
+							<td>17:05</td>
+							<td>Concluding remarks</td>
+                        </tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
