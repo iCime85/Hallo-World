@@ -6,29 +6,28 @@
 	"license": "ISC",
 	"main": "index.js",
 	"repository": "https://github.com/iCime85/Hallo-World.git",
+	"build": {
+		"win": {
+			"target": "nsis",
+			"icon": "build/icon.ico",
+			"asar": "true",
+			"compression": "store"
+		},
+		"mac": {
+			"target": "zip",
+			"compression": "store",
+			"asar": "true"
+			}
+	},
 	"scripts": {
 		"dist": "build",
 		"ship": "build -p always"
 	},
-	"build": {
-		"appId": "com.gis.app",
-		"productName": "GIS",
-		"win": {
-			"target": "portable",
-			"icon": "build/icon.ico",
-			"compression": "store",
-			"asar": "true"
-		},
-		"mac": {
-			"target": "dmg",
-			"compression": "store",
-			"asar": "true"
-		}
-	},
 	"devDependencies": {
-		"electron": "1.8.2"
+		"electron": "^3.0.12",
+		"electron-builder": "^20.38.3"
 	},
 	"dependencies": {
-		"electron-updater": "^3.2.3"
+		"electron-updater": "^4.0.6"
 	}
 }

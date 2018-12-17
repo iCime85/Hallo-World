@@ -1,5 +1,5 @@
 
-const {app, BrowserWindow, ipcMain} = require('electron');
+const {app, BrowserWindow, ipcMain, dialog} = require('electron');
 const {autoUpdater} = require("electron-updater");
 let win; // this will store the window object
 
@@ -19,7 +19,7 @@ app.on('ready', function() {
 
 // when the update has been downloaded and is ready to be installed, notify the BrowserWindow
 autoUpdater.on('update-downloaded', (info) => {
-    win.webContents.send('updateReady')
+  win.webContents.send('updateReady')
 });
 
 // when receiving a quitAndInstall signal, quit and install the new version ;)
