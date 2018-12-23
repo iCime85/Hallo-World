@@ -1,5 +1,5 @@
 {
-	"name": "gis",
+	"name": "gis-update-test-app",
 	"version": "1.2.0",
 	"description": "GIS",
 	"author": "MEDIACARD3",
@@ -14,20 +14,19 @@
 			"compression": "store"
 		},
 		"mac": {
-			"target": "zip",
 			"compression": "store",
 			"asar": "true"
-			}
+		}
 	},
 	"scripts": {
 		"dist": "build",
 		"ship": "build -p always"
 	},
-	"devDependencies": {
-		"electron": "^3.0.12",
-		"electron-builder": "^20.38.3"
-	},
 	"dependencies": {
-		"electron-updater": "^4.0.6"
+		"electron-updater": "^3.2.3"
+	},
+	"devDependencies": {
+		"electron": "^2.0.16",
+		"electron-builder": "^20.34.0"
 	}
 }

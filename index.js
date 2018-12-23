@@ -1,12 +1,20 @@
 
-const {app, BrowserWindow, ipcMain, dialog} = require('electron');
+const {app, BrowserWindow, ipcMain} = require('electron');
 const {autoUpdater} = require("electron-updater");
+
 let win; // this will store the window object
 
 // creates the default window
 function createDefaultWindow() {
-    win = new BrowserWindow({width: 1020, height: 800});
+    win = new BrowserWindow({
+        width: 1020,
+        height: 800
+      });
+
     win.loadURL('file://' +__dirname + '/public/index.html');
+
+    win.webContents.openDevTools();
+    
     win.on('closed', () => app.quit());
   return win;
 }
